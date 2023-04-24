@@ -161,7 +161,7 @@ section#projects {
   justify-content: center;
 }
 
-/* Courses */
+/*COURSES*/
 
 section#training {
   height: calc(100vh + 80px);
@@ -266,7 +266,7 @@ footer {
   text-align: center;
 }
 
-/* obrigado */
+/* OBRIGADO */
 .main{
   display: flex;
   align-items: center;
@@ -299,7 +299,6 @@ footer {
 
 }
 .obrigado:hover{
-   /* border-radius: 16px; */
    opacity: 1;
 }
 
@@ -346,6 +345,7 @@ width: 100%;
   align-items: center;
 }
 
+/* OBRIGADO */
 .main{
   text-align: center;
 
