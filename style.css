@@ -39,7 +39,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 20px;
+  padding: 5px 60px;
   height: 80px;
   position: fixed;
   top: 0;
@@ -78,7 +78,7 @@ section#home {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 5px 20px;
+  padding: 5px 120px;
   width: 100%;
 }
 
@@ -307,6 +307,7 @@ footer {
 @media (max-width: 768px) {
   header {
     justify-content: center;
+    padding: 5px 20px;
   }
   
   .logo {
@@ -316,6 +317,17 @@ footer {
   section#home {
     flex-direction: column-reverse;
     justify-content: center;
+    padding: 5px 10px;
+  }
+
+  .home-resume{
+    text-align:justify;
+  }
+  
+
+  .home-info{
+    padding:5px 20px;
+
   }
 
   .home-info, .home-img {
@@ -345,7 +357,8 @@ width: 100%;
   align-items: center;
 }
 
-/* OBRIGADO */
+
+ /* OBRIGADO */
 .main{
   text-align: center;
 
