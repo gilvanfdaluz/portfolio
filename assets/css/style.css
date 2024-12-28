@@ -617,6 +617,9 @@ main .projects-grid .description-project{
         bottom: 100px;
     }
 
+    #contacts form{
+        margin-bottom: 60px;
+    }
     .Copyright {
         padding-bottom: 70px;
       }
