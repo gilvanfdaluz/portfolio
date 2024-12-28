@@ -1,237 +1,204 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper/swiper-bundle.min.css"
-/>
-<link rel="stylesheet" href="style.css">
-  <title>Portifolio Gilvan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="assets/images/icon_rounded.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <main>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home-page"><img src="assets/images/Logo.jpg" alt="logo"></a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li class="active"><a href="#home-page">Home</a></li>
+                    <li><a href="#training">Formação</a></li>
+                    <li><a href="#courses">Cursos</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contacts">Contatos</a></li>
+                </ul>
+            </nav>
+            <div class="social-midia">
+                <a href="https://www.linkedin.com/in/gilvan-ferreira-da-luz-401b53b1/" target="_blank"><img src="assets/images/linkedin_recolored.png" alt="linkedin"></a>
+                <a href="https://github.com/gilvanfdaluz" target="_blank"><img src="assets/images/github_recolored.png" alt="github"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/instagram_recolored.png" alt="instagram"></a>   
+            </div>
+            <div class="suspended">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
     <main>
-      <!-- HEADER -->
-      <header>
-        <div class="logo">
-          <img class="img-logo" src="./img/1.jpg" alt="Foto da logo ">
-        </div>
-        <div class="menu">
-          <nav class="nav-list">
-              <a href="#home">Home</a>
-              <a href="#projects">Projetos</a>
-              <a href="#training">Formação</a>
-              <a href="#contact">Contato</a>
-          </nav>
-        </div>
-      </header>  
-      <!-- HOME -->
-    <section id="home">
-      <div class="home-info">
-        <h2>Olá, sou Gilvan Ferreira</h2>
-        <span class="home-position"><h4>Programador Junior</h4></span>
-        <span class="home-resume">
-          Formado em Análise e Desenvolvimento de Sistemas, sou apaixonado por desenvolvimento web e tenho habilidades sólidas em HTML, CSS e JavaScript. Além disso, trago experiência em Microsoft Excel, Power Bi, Microsoft Windows e TOTVS. Sou flexível, adaptável e estou pronto para enfrentar novos desafios.
-        </span>
-        <div class="button-container">
-          <a href="https://www.linkedin.com/in/gilvan-ferreira-da-luz-401b53b1/" target="_blank"><img src="./img/linkidin.png" alt=""></a>
-          <a href="https://github.com/gilvanfdaluz" target="_blank"><img src="./img/git.png" alt=""></a>
-        </div>
-      </div>
-
-      <div class="home-img">
-        <img src="./img/imagem.perfil.jpg" alt="Foto de perfil">
-      </div>
-    </section>
-
-     <!-- PROJECTS -->
-
-     <section id="projects">
-      <h2>Projetos</h2>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <a href="https://gilvanfdaluz.github.io/Site_Burger/" target="_blank"><img src="./img/B7Buerger.png" alt="Imagem de um site"></a>
+        <section class="profile"id="home-page">
+            <div class="container">
+                <div class="training flex">
+                    <div class="title">
+                        Gilvan
+                    </div>
+                    <div class="description">
+                        <div class="description-title">
+                            <h4>Sobre</h4>
+                        </div>
+                        <p>Formado em Análise e Desenvolvimento de Sistemas, sou apaixonado por desenvolvimento web e tenho
+                        habilidades sólidas em HTML, CSS e JavaScript. Além disso, trago experiência em Microsoft Excel, Power Bi,
+                        Microsoft Windows e TOTVS. Sou flexível, adaptável e estou pronto para enfrentar novos desafios.</p>
+                    </div>
+                    <img src="assets/midia/languages.png" alt="">
+                </div>
+                <div class="training-img flex">
+                    <img src="assets/images/perfil.png" alt="">
+                </div>
             </div>
-            <div class="project-info">
-              <h2><a href="https://gilvanfdaluz.github.io/Site_Burger/" target="_blank">Projeto Burguer</a></h2>
-              <p>Criação de sites para lanchonetes e vendas de produtos.</p>
+        </section>
+        <section class="container" id="training">
+            <div class="banner">
+                <div class="certification">
+                    <div class="course-information">
+                        <h1>Formação</h1>
+                        <p>Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+                    </div>
+                    <div class="diploma">
+                        <img src="assets/images/diploma.png" alt="certificate">
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <a href="https://gilvanfdaluz.github.io/projeto-mario/" target="_blank"><img src="./img/Mario.png" alt="Imagem de um site"></a>
+        </section>
+        <section class="container" id="courses">
+              <div class="slide">
+                <h1>Cursos</h1>
+                <div class="slides">
+                    <div class="conteudo">
+                        <div class="course-information-slide">
+                            <p>Curso de HTML5 e CSS3</p>
+                        </div>
+                        <div class="certification-course">
+                            <img src="assets/images/html_css_B7Web.png" alt="">
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div class="course-information-slide">
+                            <p>Desenvolvimento de Software</p>
+                        </div>
+                        <div class="certification-course">
+                            <img src="assets/images/Introd_Desenv_Sofwere.png" alt="">
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div class="course-information-slide">
+                            <p>Desenvovimento e Esturtuas de Arquivos</p>
+                        </div>
+                        <div class="certification-course">
+                            <img src="assets/images/Alura.png" alt="">
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div class="course-information-slide">
+                            <p>Introdução ao JavaScript</p>
+                        </div>
+                        <div class="certification-course">
+                            <img src="assets/images/introducao_ao_JavaScript.png" alt="">
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div class="course-information-slide">
+                            <p>PowerBi Express</p>
+                        </div>
+                        <div class="certification-course">
+                            <img src="assets/images/PowerBi_Express.png" alt="">
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div class="course-information-slide">
+                            <p>Dashboards no Excel e no PowerBi</p>
+                        </div>
+                        <div class="certification-course">
+                            <img src="assets/images/Basico_PowerBi.png" alt="">
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div class="course-information-slide">
+                            <p>Intensivão de PowerBi</p>
+                        </div>
+                        <div class="certification-course">
+                            <img src="assets/images/hashtag.png" alt="">
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div class="course-information-slide">
+                            <p>Word e Excel</p>
+                        </div>
+                        <div class="certification-course">
+                            <img src="assets/images/Word_Excel.png" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="prev">&lt;</button>
+                    <button class="next">&gt;</button>
+                    <!-- Indicadores -->
+                    <div class="indicators"></div>
+                </div>
+        </section>
+        <section class="container teste" id="projects">
+            <div class="title-grid"><h1>Projetos</h1></div>
+            <div class="projects-grid">
+                <a href="https://gilvanfdaluz.github.io/Site_Burger/" target="_blank" class="projects-info">
+                    <img src="assets/midia/B7Buerger.png" alt="image">
+                    <div class="info">
+                        <div class="title-project">Saite Burger</div>
+                        <div class="description-project">
+                            <p>Sites para lanchonetes, apresentação e venda de produtos</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://gilvanfdaluz.github.io/projeto-wolverine/" target="_blank" class="projects-info">
+                    <img src="assets/midia/Wolverine.png" alt="image">
+                    <div class="info">
+                        <div class="title-project">Wolverine</div>
+                        <div class="description-project">
+                            <p>landing page com video-play</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://gilvanfdaluz.github.io/projeto-mario/" target="_blank" class="projects-info">
+                        <img src="assets/midia/Mario.png" alt="image">
+                    <div class="info">
+                        <div class="title-project">Super Mario</div>
+                        <div class="description-project">
+                            <p>landing page com video-play</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="project-info">
-              <h2><a href="https://gilvanfdaluz.github.io/projeto-mario/" target="_blank">Projeto Mario</a></h2>
-              <p>Criação de Landin Page para filmes online.</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <a href="https://gilvanfdaluz.github.io/projeto-wolverine/" target="_blank"><img src="./img/Wolverine.png" alt="Imagem de uma land page do filme Wolverine"></a>
-            </div>
-            <div class="project-info">
-              <h2><a href="https://gilvanfdaluz.github.io/projeto-wolverine/" target="_blank">Projeto Wolverine</a></h2>
-              <p>Criação de sites modernos responsivos para qualquer dispositivo.</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <a href="https://gilvanfdaluz.github.io/projeto_calculadora/" target="_blank"><img src="./img/Calculadora.png" alt="Imagem de uma calculadora"></a>
-            </div>
-            <div class="project-info">
-              <h2><a href="https://gilvanfdaluz.github.io/projeto_calculadora/" target="_blank">Calculadora Web</a></h2>
-              <p>Criação de Calculadora Web para calculos matemáticos.</p>
-            </div>
-          </div>
-
-        </div>
-      
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-
-  <!-- TRAINING -->
-  <section id="training">
-      <h2>Formação Acadêmica</h2>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/diploma.png" alt="Diploma">
-            </div>
-            <div class="project-info">
-              <h2>Surperior em Analise e Desenvolvimento de Sistemas</h2>
-              <p>Univercidade Salvador (UNIFACS).</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/html_css_B7Web.png" alt="certificado">
-            </div>
-            <div class="project-info">
-              <p>Instituição</p>
-              <h2>B7Web</h2> 
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/Alura.png" alt="certificado">
-            </div>
-            <div class="project-info">
-              <p>Instituição</p>
-              <h2>Alura</h2> 
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/Introd_Desenv_Sofwere.png" alt="certificado">
-            </div>
-            <div class="project-info">
-              <p>Instituição</p>
-              <h2>Cubos Academy</h2> 
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/introducao_ao_JavaScript.png" alt="certificado">
-            </div>
-            <div class="project-info">
-              <p>Instituição</p>
-              <h2>DIO</h2>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/hashtag.png" alt="certificado">
-            </div>
-            <div class="project-info">
-              <p>Instituição</p>
-              <h2>Hashtag Treinamentos</h2>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/PowerBi_Express.png" alt="certificado">
-            </div>
-            <div class="project-info">
-              <p>Instituição</p>
-              <h2>Simplifica Treinamentos</h2>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/Basico_PowerBi.png" alt="certificado">
-            </div>
-            <div class="project-info">
-              <p>Instituição</p>
-              <h2>Excel Clube</h2>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/Word_Excel.png" alt="certificado">
-            </div>
-            <div class="project-info">
-              <p>Instituição</p>
-              <h2>Cursos 24 Horas</h2>
-            </div>
-          </div>
-
-        </div>
-      
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contato</h2>
-    
-  <form action="https://api.staticforms.xyz/submit" method="post">
-      <label>Nome</label>
-      <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
-      <label>Email</label>
-      <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
-      <label>Mensagem</label>
-      <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-
-      <input type="hidden" name="accessKey" value="45ad1689-51d4-4395-9b6c-6b2f54fb028e">
-      <input type="hidden" name="redirectTo" value="https://gilvanfdaluz.github.io/portfolio/obrigado.html">
-  </form>
-
-  </section>
-
-  <footer>
-    copyright © 2024 Gilvan Ferreira. Todos os direitos reservados
-  </footer>
-
-  </main>  
-  </main>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+        </section>
+        <section class="container" id="contacts">
+            <h1>Contato</h1>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                <button class="button" type="submit">Enviar</button>
+                <input type="hidden" name="accessKey" value="45ad1689-51d4-4395-9b6c-6b2f54fb028e">
+                <input type="hidden" name="redirectTo" value="https://gilvanfdaluz.github.io/portfolio/obrigado.html">
+            </form>          
+        </section>
+    </main>
+    <footer class="Copyright">
+        <img src="assets/images/Logo.jpg" alt="">
+        <address>
+            Criado por:<a href="https://www.linkedin.com/in/gilvan-ferreira-da-luz-401b53b1/" target="_blank"> Gilvan Ferreira</a>
+        </address>
+        <p>&copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

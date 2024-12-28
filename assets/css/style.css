@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tenor+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Tenor Sans", sans-serif;
+    background-color: #f7d9a4;
+    margin-top: 100px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/*HADER*/
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #3a2812;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+header .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 70%;
+    border: 2px solid #f7d9a4;
+}
+header .social-midia {
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+}
+header .social-midia a {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    border-bottom: 5px solid #3a2812;
+}
+header .social-midia a:hover {
+    border-bottom: 5px solid #deb371;
+}
+header .social-midia img {
+    max-width: 50px;   
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navigation {
+    display: flex;
+    flex: 1;
+}
+ header .container ul  {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+}
+header .navigation a {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #f7d9a4;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    border-bottom: 5px solid #3a2812;
+}
+header .navigation a:hover,
+header .navigation .active a{
+    border-bottom: 5px solid #deb371;
+    color: #deb371;
+}
+
+header .suspended div{
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color:#f7d9a4;
+    margin: 6px;
+}
+
+/*MAIN PROFILE*/
+main .profile,
+main .container {
+    height: calc(100vh - 100px);
+    scroll-margin-top: 100px;
+}
+main .profile {
+    background-image:url(../images/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+}
+main .profile .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .profile .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main .profile .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+}
+main .profile .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 500;
+    color: #af8016;
+    margin-bottom: 20px;
+}
+main .profile .description {
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: #f7d9a4;
+    color: #523e27;
+    margin-bottom: 20px;
+}
+main .profile .description-title{
+    padding-bottom: 40px;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+main .profile .description-title h4{
+    border-bottom: 3px solid #523e27;
+}
+main .description p{
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+main .profile .training-img {
+    align-items: flex-end;
+}
+main .profile .training-img img {
+    width: 400px;
+    height: 400px;
+    background-color: #f7d9a4;
+    border-radius: 75%;
+    border: 5px solid #af8016;
+}
+main .profile .training img {
+    width: 180px;
+}
+
+/*CONTAINER CERTIFICATION*/
+main .container .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+main .banner .certification {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    color: #3a2812;
+}
+main .banner .diploma {
+   width: 100%;
+}
+main .certification .course-information h1{
+    font-size: 30px;
+}
+main .banner .course-information,
+main .banner .course-information p {
+    padding: 10px;
+}
+main .banner .diploma img{
+max-width: 80%;
+max-height: 500px;
+width: 100%;
+height: auto;
+border-radius: 8px;
+border: 2px solid #3a2812;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*CONTAINE SLIDE*/
+/* Estilo do slide principal */
+main .container .slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #3a2812;
+    overflow: hidden;
+    position: relative; /* Necessário para posicionar os botões */
+}
+main .container .slide h1 {
+    padding-top: 30px;
+    font-size: 30px;
+    color: #3a2812;
+}
+
+/* Slides */
+main .container .slides {
+    display: flex; /* Alinha os itens lado a lado */
+    height: 100%;
+    width: 100%; /* Ajusta a largura para ocupar apenas o espaço visível */
+    transition: transform 0.5s ease; /* Suaviza a transição entre slides */
+}
+main .container .conteudo {
+    min-width: 100%; /* Cada slide ocupa 100% da largura visível */
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+main .conteudo .course-information-slide p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3a2812;
+}
+
+/* Ajuste da classe certification-course */
+main .container .certification-course {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+main .container .certification-course img {
+    max-width: 90%;
+    max-height: 400px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #3a2812;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões de navegação */
+main .container .slide .prev,
+main .container .slide .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3a2812;
+    color: white;
+    border: 2px solid #af8016;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+main .container .slide .prev {
+    left: 10px;
+}
+main .container .slide .next {
+    right: 10px;
+}
+main .container .slide .prev:hover,
+main .container .slide .next:hover {
+    background-color: #af8016;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Indicadores de slide (círculos) */
+main .container .slide .indicators {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+main .container .slide .indicators button {
+    width: 12px;
+    height: 12px;
+    background-color: #3a2812;
+    border: 2px solid #523e27;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+main .container .slide .indicators button:hover {
+    background-color: #af8016;
+    transform: scale(1.2);
+}
+main .container .slide .indicators button.active {
+    background-color: #af8016;
+    border-color: #3a2812;
+}
+
+/*PROJECTS GRID*/
+main .title-grid {
+    text-align: center;
+    color: #3a2812;
+    font-size: 20px;
+    padding: 20px;
+}
+main .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #3a2812;
+}
+
+main .projects-grid img{
+    width: 100%;
+    border-radius: 10px;
+}
+main .projects-grid .projects-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color:#deb371;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main .projects-grid .projects-info:hover {
+    transform: scale(1.05); /* Adiciona um efeito de zoom */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao passar o mouse*/
+}
+main .projects-grid .title-project{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #3a2812;
+    font-weight: 700;
+}
+main .projects-grid .description-project{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #3a2812;
+}
+
+/*CONTATOS*/
+#contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #3a2812;
+    gap: 30px
+}
+#contacts form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: #3a2812;
+    color: #f7d9a4;    
+}
+#contacts input, textarea, .button {
+    box-shadow: 0 1px 2px #3a2812;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    background: #f5e4d7; 
+  }
+  #contacts form .button {
+    background-color:#af8016;
+    color:#3a2812;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: #deb371;
+  }
+  #contacts form .button:hover{
+    opacity: 1;
+  }
+
+  /*COPYRIGHT*/
+  .Copyright {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px;
+    background-color: #523e27;
+    color: #f7d9a4;
+    font-size: 18px;
+  }
+  .Copyright img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #deb371;
+  }
+  .Copyright a{
+    text-decoration: none;
+    font-weight: bold;
+   color: #f7d9a4;
+  }
+
+  /*OBRIGADO*/
+  .main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+  }
+  .main .text{
+     font-size: 45px;
+     color: #3a2812;
+     margin-bottom: 30px;
+  }
+  .main .paragrafo{
+     color: #3a2812;
+     margin-bottom: 50px;
+     font-size: 18px;
+  }
+  .main .obrigado{
+     border: none;
+     width: 150px;
+     padding: 10px;
+     background-color: #3a2812;
+     color: white;
+     font-size: 18px;
+     cursor: pointer;
+     opacity: 0.9;
+     border-radius: 5px;
+  }
+  .main .obrigado:hover{
+     opacity: 1;
+  }
+  .main .obrigado a{
+    text-decoration: none;
+    color: #f7d9a4;
+  }
+
+/*MEDIA*/
+@media (max-width: 1075px){
+    main .profile .title {
+        font-size: 80px;
+    }
+    main .profile .description {
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-bottom:10px;
+    }
+    main .profile .description-title{
+        padding-bottom: 20px;
+        font-size: 35px;
+    }
+    main .profile .training-img img {
+        width: 350px;
+        height: 350px;
+    }
+    main .profile .training img{
+        width: 130px;
+    }
+  
+}
+@media (max-width: 870px){
+    #projects{
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    header .navigation.open {
+        display: flex;
+        flex-direction: column;
+    }    
+    header .suspended div{
+        display:flex;
+    }
+    header,
+    header .container {
+        height: 70px;
+    }
+    body {
+        margin-top: 70px;
+    }
+    main .profile,
+    main .container {
+        height: calc(100vh - 70px);
+        scroll-margin-top: 70px;
+    } 
+    header .navigation{
+        display: none;  
+        background-color:#3a2812;
+        border-top: 2px solid #f7d9a4;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        box-sizing: border-box;
+        width: 100%;  
+    }
+    header .navigation a,
+    header .navigation .active a{
+        border-bottom: none;
+        color:#f7d9a4;
+    }
+    header .navigation a:hover, 
+    header .navigation .active a:hover{
+        border-bottom: none;
+        color: #f7d9a4;
+    }
+    header .navigation ul{
+        display: flex;
+        flex-direction: column;
+    }
+    header .navigation li{
+        padding: 30px;
+    }
+    header .navigation a{
+        height: 30px;
+    }
+    .social-midia {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        bottom: 0;
+        left: 0;
+        align-items: center;
+        justify-content:space-around;
+        background-color: #3a2812;
+    }
+    .social-midia img {
+        width: 30px;
+    }
+    header .social-midia a{
+        border-bottom: none;
+    }
+    header .social-midia a:hover {
+        border-bottom: none;
+    }
+    main .profile{
+        display: flex;
+        align-items:center;
+    }
+    main .profile .training img{
+        margin-bottom: 60px;
+    }
+    header .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    main .profile .container {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+    main .profile .training-img img {
+        max-width : 150px;
+        max-height: 150px;
+        border: 3.5px solid #af8016;
+    }
+    main .profile .title {
+        font-size: 40px;
+    }
+    main .profile .description-title{
+        padding-bottom: 10px;
+        font-size: 30px;    
+    }
+    main .profile .description-title{
+        font-size: 25px;
+    }
+    main .description p{
+        font-size: 14px;
+        line-height: 20px
+    }
+    main .banner .diploma img{
+        max-width: 90%;
+    }
+    main .container .slide .indicators {
+        bottom: 100px;
+    }
+
+    .Copyright {
+        padding-bottom: 70px;
+      }
+
+     /*OBRIGADO*/
+    .main{
+        text-align: center;
+      }
+}
+
+@media (max-width: 425px) {
+    main .profile .title {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+   main .profile .training-img img {
+        margin-top: 10px;
+       
+   }
+    main .profile .description-title{
+        padding-bottom: 10px;
+        font-size: 25px;    
+    }
+
+    main .profile .training img{
+        width: 100px;
+    }  
+    main .banner .diploma img{
+        max-width: 100%;
+    }
+    main .container .slide .indicators {
+        bottom: 150px;
+    }
+    .Copyright {
+        font-size: medium;
+        text-align: center;
+    }
+ }
+
+@media (max-width: 310px){
+    main .profile {
+        height: auto;
+    }
+    main .profile .training img{
+        margin-bottom: 30px;
+    }
+    main .profile .training-img img {
+        max-width : 130px;
+        max-height: 130px;    
+    }
+    main .projects-grid {
+        display: flex;
+        flex-direction: column;
+    } 
+}
