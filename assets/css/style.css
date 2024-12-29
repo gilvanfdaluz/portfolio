@@ -171,64 +171,66 @@ main .profile .training img {
 }
 
 /*CONTAINER CERTIFICATION*/
-main .container .banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-main .banner .certification {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    color: #3a2812;
-    border-radius: 10px;
-    gap: 20px;
-}
-main .banner .diploma {
-   width: 100%;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   background-color:#deb371;
-   padding: 20px;
-   border-radius: 10px;
-   border: 5px solid #3a2812;
-   gap: 10px;
-
-}
-main .certification .course-information h1{
+main .container .titles{
+    padding: 30px;
     font-size: 30px;
     color: #3a2812;
+    text-align: center;
 }
-main .banner .course-information,
-main .banner .course-information p {
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #3a2812;
+main .container .banner {
+    width: 100%;
+    height:100%;
+   overflow:hidden
 }
-main .banner .diploma img{
-max-width: 50%;
-max-height: 400px;
-width: 100%;
-height: auto;
-border-radius: 8px;
-border: 2px solid #3a2812;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+main .container .certification {
+    width: 100%;
+    height:calc(100% - 100px);
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-
-main .container .banner h1 {
+main .container .banner-certification{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main .container .course-information {
+    background-image:url(../images/Graduação.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #f5e4d7;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+    padding: 5px;
+}
+main .container .course-information h1 {
+    text-align: center;
     padding: 30px;
-    color: #3a2812;
-
+    font-size: 55px;  
+    word-wrap: break-word;
 }
-
+main .container .course-information p {
+    font-size: 25px;
+    word-wrap: break-word;  
+}
+main .container .banner-certification {
+    height: 100%;
+}
+main .container .banner-certification img {
+    max-width: 50%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;   
+}
 
 /*CONTAINE SLIDE*/
 /* Estilo do slide principal */
@@ -353,7 +355,7 @@ main .title-grid {
 }
 main .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
     border-radius: 5px;
@@ -518,12 +520,14 @@ main .projects-grid .description-project{
     }
     main .profile .training img{
         width: 130px;
-    }
-  
+    } 
 }
 @media (max-width: 870px){
     #projects{
         height: auto;
+    }
+    main .container .course-information h1 {
+        font-size: 40px;   
     }
 }
 
@@ -637,26 +641,35 @@ main .projects-grid .description-project{
     main .container .slide .indicators {
         bottom: 100px;
     }
-
-    main .banner .diploma {
-        flex-direction: column-reverse;
-    }
-
     #contacts form{
         margin-bottom: 60px;
     }
     .Copyright {
         padding-bottom: 70px;
       }
-
-      .course-information{
-        width: 100%;
-      }
+      main .container .course-information h1 {
+        font-size: 35px;   
+    }
 
      /*OBRIGADO*/
     .main{
         text-align: center;
-      }
+    }
+}
+
+@media (max-width: 630px) {
+    main .container .banner-certification{
+        flex-direction: column-reverse;  
+    }
+    main .container .course-information {
+        border-radius: 10px 10px 0 0;
+    }
+    main .container .banner-certification img {
+       max-width: 100%;
+        min-width: 240px;
+        height: auto;
+        border-radius: 0 0 10px 10px; 
+    }
 }
 
 @media (max-width: 425px) {
@@ -664,16 +677,13 @@ main .projects-grid .description-project{
         font-size: 35px;
         margin-bottom: 10px;
     }
-
    main .profile .training-img img {
-        margin-top: 10px;
-       
+        margin-top: 10px;    
    }
     main .profile .description-title{
         padding-bottom: 10px;
         font-size: 25px;    
     }
-
     main .profile .training img{
         width: 100px;
     }  
@@ -686,6 +696,9 @@ main .projects-grid .description-project{
     .Copyright {
         font-size: medium;
         text-align: center;
+    }
+    main .container .course-information h1 {
+        font-size: 30px; 
     }
  }
 
@@ -703,5 +716,11 @@ main .projects-grid .description-project{
     main .projects-grid {
         display: flex;
         flex-direction: column;
-    } 
+    }
+    main .container .course-information h1 {
+        font-size:25px;   
+    }
+    main .container .course-information p {
+        font-size:20px;   
+    }
 }
