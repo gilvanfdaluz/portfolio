@@ -106,11 +106,6 @@ main .profile {
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
 }
-main .profile .description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 main .profile .container {
     display: flex;
     justify-content: center;
@@ -135,12 +130,15 @@ main .profile .title {
     margin-bottom: 20px;
 }
 main .profile .description {
+    display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
     background-color: #f7d9a4;
     color: #523e27;
-    margin-bottom: 20px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;  
 }
 main .profile .description-title{
     padding-bottom: 40px;
@@ -243,7 +241,7 @@ main .container .slide {
     text-align: center;
     color: #3a2812;
     overflow: hidden;
-    position: relative; /* Necessário para posicionar os botões */
+    position: relative;
 }
 main .container .slide h1 {
     padding-top: 30px;
@@ -253,13 +251,13 @@ main .container .slide h1 {
 
 /* Slides */
 main .container .slides {
-    display: flex; /* Alinha os itens lado a lado */
+    display: flex;
     height: 100%;
-    width: 100%; /* Ajusta a largura para ocupar apenas o espaço visível */
-    transition: transform 0.5s ease; /* Suaviza a transição entre slides */
+    width: 100%;
+    transition: transform 0.5s ease;
 }
 main .container .conteudo {
-    min-width: 100%; /* Cada slide ocupa 100% da largura visível */
+    min-width: 100%;
     height: 100%;
     box-sizing: border-box;
     display: flex;
@@ -377,8 +375,8 @@ main .projects-grid .projects-info {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 main .projects-grid .projects-info:hover {
-    transform: scale(1.05); /* Adiciona um efeito de zoom */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao passar o mouse*/
+    transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 main .projects-grid .title-project{
     padding-top: 10px;
@@ -532,6 +530,9 @@ main .projects-grid .description-project{
 }
 
 @media (max-width: 768px){
+    body {
+        margin-top: 70px;
+    }
     header .navigation.open {
         display: flex;
         flex-direction: column;
@@ -543,9 +544,7 @@ main .projects-grid .description-project{
     header .container {
         height: 70px;
     }
-    body {
-        margin-top: 70px;
-    }
+   
     main .profile,
     main .container {
         height: calc(100vh - 70px);
