@@ -92,3 +92,7 @@ nextButton.addEventListener('click', () => {
 createIndicators();
 updateSlidePosition();
 startAutoSlide();
+
+
+// Atualiza automaticamente o ano atual no footer
+document.getElementById("year").textContent = new Date().getFullYear();
