@@ -351,15 +351,18 @@ main .title-grid {
     font-size: 20px;
     padding: 20px;
 }
+#projects {
+    height: auto;
+    scroll-margin-top: 100px;
+}
 main .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
     border-radius: 5px;
-    background-color: #3a2812;
+    background-color: #3a2812;   
 }
-
 main .projects-grid img{
     width: 100%;
     border-radius: 10px;
@@ -523,6 +526,9 @@ main .projects-grid .description-project{
 @media (max-width: 870px){
     #projects{
         height: auto;
+    }
+    main .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     main .container .course-information h1 {
         font-size: 40px;   
