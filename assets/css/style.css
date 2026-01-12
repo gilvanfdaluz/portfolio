@@ -453,7 +453,7 @@ main .projects-grid .description-project{
     font-size: 18px;
   }
   .Copyright img {
-    max-width: 200px;
+    max-width: 100px;
     width: 100%;
     border-radius: 10px;
     border: 2px solid #deb371;
