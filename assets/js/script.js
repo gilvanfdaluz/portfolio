@@ -96,3 +96,15 @@ startAutoSlide();
 
 // Atualiza automaticamente o ano atual no footer
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Preenche `replyTo` antes do envio do formulário (usado pelo StaticForms)
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', () => {
+        const emailInput = contactForm.querySelector('[name="email"]');
+        const replyToInput = contactForm.querySelector('[name="replyTo"]');
+        if (emailInput && replyToInput) {
+            replyToInput.value = emailInput.value;
+        }
+    });
+}

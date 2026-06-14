@@ -205,7 +205,7 @@
         </section>
         <section class="container" id="contacts">
             <h1>Contato</h1>
-            <form action="https://api.staticforms.xyz/submit" method="post">
+            <form id="contactForm" action="https://api.staticforms.xyz/submit" method="post">
                 <label>Nome</label>
                 <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
                 <label>Email</label>
@@ -213,6 +213,8 @@
                 <label>Mensagem</label>
                 <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
                 <button class="button" type="submit">Enviar</button>
+                <input type="hidden" name="subject" value="Contato pelo site — Portfolio">
+                <input type="hidden" name="replyTo" value="">
                 <input type="hidden" name="accessKey" value="45ad1689-51d4-4395-9b6c-6b2f54fb028e">
                 <input type="hidden" name="redirectTo" value="https://gilvanfdaluz.github.io/portfolio/obrigado.html">
             </form>          
